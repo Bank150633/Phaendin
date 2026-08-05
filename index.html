@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 
 <meta charset="UTF-8">
@@ -7,9 +8,65 @@
 
 <title>DEALTHAI MOVIES</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
+
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:Arial;
+}
+
+header{
+    background:#000;
+    padding:20px;
+    text-align:center;
+}
+
+.logo{
+    font-size:30px;
+    color:red;
+    font-weight:bold;
+}
+
+.search{
+    margin-top:20px;
+    padding:12px;
+    width:80%;
+    border-radius:20px;
+    border:0;
+}
+
+.container{
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#222;
+    padding:15px;
+    border-radius:15px;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+button{
+    background:red;
+    color:white;
+    border:0;
+    padding:10px;
+    border-radius:20px;
+}
+
+</style>
 
 </head>
+
 
 <body>
 
@@ -20,55 +77,16 @@
 🎬 DEALTHAI MOVIES
 </div>
 
-<input 
-type="text" 
-placeholder="ค้นหาหนัง..."
-id="search"
->
-
-
-<nav>
-
-<button>หน้าแรก</button>
-<button>หนังใหม่</button>
-<button>ยอดนิยม</button>
-<button>หมวดหมู่</button>
-
-</nav>
+<input class="search" placeholder="ค้นหาหนัง">
 
 </header>
 
 
 
-<section class="hero">
-
-<h1>
-ดูหนังฟรี
-</h1>
-
-<p>
-รวมหนังคลาสสิกและผลงานที่อนุญาตให้เผยแพร่
-</p>
-
-<button>
-เริ่มดู
-</button>
-
-</section>
+<div class="container">
 
 
-
-
-<h2>
-🔥 หนังแนะนำ
-</h2>
-
-
-<div class="movie-list">
-
-
-
-<div class="movie-card">
+<div class="card">
 
 <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Night_of_the_Living_Dead_%281968%29.jpg">
 
@@ -81,15 +99,14 @@ Night of the Living Dead
 </p>
 
 <button>
-▶ ดู
+▶ ดูหนัง
 </button>
 
 </div>
 
 
 
-
-<div class="movie-card">
+<div class="card">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/The_General_%281926_film_poster%29.jpg">
 
@@ -102,63 +119,13 @@ The General
 </p>
 
 <button>
-▶ ดู
-</button>
-
-</div>
-
-
-
-
-<div class="movie-card">
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Metropolis_%281927%29_poster.jpg/800px-Metropolis_%281927%29_poster.jpg">
-
-<h3>
-Metropolis
-</h3>
-
-<p>
-1927 | Sci-Fi
-</p>
-
-<button>
-▶ ดู
+▶ ดูหนัง
 </button>
 
 </div>
 
 
 </div>
-
-
-
-
-
-<h2>
-⭐ หมวดหมู่
-</h2>
-
-
-<div class="category">
-
-<div>แอ็กชัน</div>
-<div>ตลก</div>
-<div>สยองขวัญ</div>
-<div>ไซไฟ</div>
-<div>อนิเมะ</div>
-
-</div>
-
-
-
-
-
-<footer>
-
-DEALTHAI MOVIES © 2026
-
-</footer>
 
 
 </body>
