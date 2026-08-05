@@ -1,131 +1,165 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phaendin</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #ee4d2d;
-            --bg-color: #f5f5f5;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-        .app-container {
-            width: 100%;
-            max-width: 480px;
-            background: white;
-            min-height: 100vh;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-        header {
-            background: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid var(--primary-color);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        header h1 {
-            margin: 0;
-            color: var(--primary-color);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        .product-list {
-            padding: 15px;
-        }
-        .product-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border: 1px solid #eee;
-            transition: transform 0.2s;
-        }
-        .product-card:active {
-            transform: scale(0.98);
-        }
-        .product-img {
-            width: 100%;
-            aspect-ratio: 1/1;
-            object-fit: cover;
-        }
-        .product-detail {
-            padding: 15px;
-        }
-        .product-title {
-            font-size: 16px;
-            font-weight: 500;
-            margin: 0 0 10px 0;
-            color: #333;
-        }
-        .btn-buy {
-            display: block;
-            background-color: var(--primary-color);
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: 500;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #888;
-            font-size: 12px;
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DEALTHAI MOVIES</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<div class="app-container">
-    <header>
-        <h1>PHAENDIN</h1>
-        <p style="margin: 5px 0 0; font-size: 14px; color: #666;">คัดสรรสินค้าดีที่สุดเพื่อคุณ</p>
-    </header>
 
-    <div class="product-list">
-    <div class="product-card">
-    <img class="product-img" src="ใส่ลิงก์รูป" alt="ชื่อสินค้า">
-    <div class="product-detail">
-        <h2 class="product-title">ใส่ชื่อสินค้า</h2>
-        <a href="ใส่ลิงก์Shopee" class="btn-buy" target="_blank">🛒 ดูรายละเอียดสินค้า</a>
-    </div>
+<header>
+
+<div class="logo">
+🎬 DEALTHAI MOVIES
 </div>
 
-        
-        <div class="product-card">
-            <img class="product-img" src="https://down-th.img.susercontent.com/file/th-11134207-7r98r-lks9a1v5p0p0a1" alt="ชุดกี่เพ้า">
-            <div class="product-detail">
-                <h2 class="product-title">ชุดกี่เพ้าแขนสั้นสไตล์จีน ทรงสวยทันสมัย</h2>
-                <a href="https://s.shopee.co.th/6KyrCavNMX" class="btn-buy" target="_blank">🛒 ดูรายละเอียดสินค้า</a>
-            </div>
-        </div>
+<input 
+type="text" 
+placeholder="ค้นหาหนัง..."
+id="search"
+>
 
-        <div class="product-card">
-            <img class="product-img" src="ใส่ลิงก์รูปสินค้าตัวที่สองที่นี่" alt="สินค้าตัวที่สอง">
-            <div class="product-detail">
-                <h2 class="product-title">ชื่อสินค้าตัวที่สองของคุณ</h2>
-                <a href="ใส่ลิงก์Shopeeตัวที่สองที่นี่" class="btn-buy" target="_blank">🛒 ดูรายละเอียดสินค้า</a>
-            </div>
-        </div>
-        
-    </div>
 
-    <footer>
-        &copy; 2026 Phaendin Selection. All Rights Reserved.
-    </footer>
+<nav>
+
+<button>หน้าแรก</button>
+<button>หนังใหม่</button>
+<button>ยอดนิยม</button>
+<button>หมวดหมู่</button>
+
+</nav>
+
+</header>
+
+
+
+<section class="hero">
+
+<h1>
+ดูหนังฟรี
+</h1>
+
+<p>
+รวมหนังคลาสสิกและผลงานที่อนุญาตให้เผยแพร่
+</p>
+
+<button>
+เริ่มดู
+</button>
+
+</section>
+
+
+
+
+<h2>
+🔥 หนังแนะนำ
+</h2>
+
+
+<div class="movie-list">
+
+
+
+<div class="movie-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Night_of_the_Living_Dead_%281968%29.jpg">
+
+<h3>
+Night of the Living Dead
+</h3>
+
+<p>
+1968 | Horror
+</p>
+
+<button>
+▶ ดู
+</button>
+
 </div>
+
+
+
+
+<div class="movie-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/The_General_%281926_film_poster%29.jpg">
+
+<h3>
+The General
+</h3>
+
+<p>
+1926 | Comedy
+</p>
+
+<button>
+▶ ดู
+</button>
+
+</div>
+
+
+
+
+<div class="movie-card">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Metropolis_%281927%29_poster.jpg/800px-Metropolis_%281927%29_poster.jpg">
+
+<h3>
+Metropolis
+</h3>
+
+<p>
+1927 | Sci-Fi
+</p>
+
+<button>
+▶ ดู
+</button>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<h2>
+⭐ หมวดหมู่
+</h2>
+
+
+<div class="category">
+
+<div>แอ็กชัน</div>
+<div>ตลก</div>
+<div>สยองขวัญ</div>
+<div>ไซไฟ</div>
+<div>อนิเมะ</div>
+
+</div>
+
+
+
+
+
+<footer>
+
+DEALTHAI MOVIES © 2026
+
+</footer>
+
 
 </body>
 </html>
